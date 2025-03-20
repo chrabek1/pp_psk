@@ -7,7 +7,6 @@ void pio(float r, float *p, float *v) {
     *v=4*r*r*r*M_PI/3;
     return;
 }
-
 int main(){
     float r=3,p=0,v=0;
     pio(r,&p,&v);
