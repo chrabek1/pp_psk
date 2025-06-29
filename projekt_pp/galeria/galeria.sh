@@ -32,7 +32,6 @@ html_output="<!DOCTYPE html>
   <h4>Foo Bar GraphiC DesigneR</h4>
 "
 
-# Pętla po wszystkich plikach graficznych w folderze
 for obraz in *.jpg; do
   html_output+="<div class="responsive">
 		  <div class="gallery">
@@ -44,8 +43,6 @@ for obraz in *.jpg; do
 		</div>"
 done
 
-# Zakończenie HTML-a
 html_output+="</body>\n</html>"
 
-# Zapisz do pliku
 echo -e $html_output > galeria.html
